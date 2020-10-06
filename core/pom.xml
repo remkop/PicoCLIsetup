@@ -6,19 +6,17 @@
         <artifactId>cli_compare</artifactId>
         <groupId>edu.bonn.cs.iv</groupId>
         <version>1.0.0pre</version>
-        <relativePath>../../pom.xml</relativePath>
+<!--        <relativePath>../pom.xml</relativePath>-->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>util</artifactId>
+    <artifactId>core</artifactId>
     <packaging>jar</packaging>
 
     <build>
-        <testSourceDirectory>test</testSourceDirectory>
-        <sourceDirectory>.</sourceDirectory>
 
         <plugins>
-         <!--   <plugin>
+            <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
@@ -33,7 +31,7 @@
                         <arg>-Aproject=${project.groupId}/${project.artifactId}</arg>
                     </compilerArgs>
                 </configuration>
-            </plugin>-->
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -46,7 +44,6 @@
                             <mainClass>edu.bonn.cs.iv.bonnmotion.run.BM</mainClass>
                         </manifest>
                     </archive>
-                    <outputDirectory>../../target</outputDirectory>
                 </configuration>
             </plugin>
             <plugin>
@@ -76,4 +73,6 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+
+
 </project>

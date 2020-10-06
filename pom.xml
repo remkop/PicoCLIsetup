@@ -36,8 +36,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>src/core</module>
-        <module>src/util</module>
+        <module>core</module>
+        <module>util</module>
     </modules>
 
     <licenses>
@@ -115,7 +115,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-<!--                    <annotationProcessorPaths>
+                    <source>10</source>
+                    <target>10</target>
+                    <annotationProcessorPaths>
                         <path>
                             <groupId>info.picocli</groupId>
                             <artifactId>picocli-codegen</artifactId>
@@ -124,7 +126,7 @@
                     </annotationProcessorPaths>
                     <compilerArgs>
                         <arg>-Aproject=${project.groupId}/${project.artifactId}</arg>
-                    </compilerArgs>-->
+                    </compilerArgs>
                 </configuration>
             </plugin>
 
